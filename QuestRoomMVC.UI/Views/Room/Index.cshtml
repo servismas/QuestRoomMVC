@@ -1,0 +1,21 @@
+﻿@model ICollection<QuestRoomMVC.BLL.DtoModels.QuestRoomDto>
+
+    <div class="row">
+        @foreach (var r in Model)
+        {
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">@r.Name</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">@r.Email</h6>
+                        <p class="card-text">@r.CompanyName</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success w-100"> ClickMe</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
