@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\QuestRoom.cs" />
+    <Compile Include="Initializer\RoomsInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestContext.cs" />
     <Compile Include="Repository\IRepository.cs" />
@@ -60,8 +61,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Initializer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

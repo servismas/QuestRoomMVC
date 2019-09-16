@@ -5,6 +5,7 @@ using QuestRoomMVC.BLL.Services.Implementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -13,24 +14,24 @@ namespace QuestRoomMVC.UI.Controllers
     public class RoomController : Controller
     {
         private readonly IRoomService roomService;
-        public RoomController()
-        {
-            var mapperConfig = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile(new MapperProfile());
-            });
+        //public RoomController()
+        //{
+        //    var mapperConfig = new MapperConfiguration(cfg =>
+        //    {
+        //        cfg.AddProfile(new MapperProfile());
+        //    });
 
-            IMapper mapper = new Mapper(mapperConfig);
-            roomService = new RoomService(mapper);
-        }
+        //    IMapper mapper = new Mapper(mapperConfig);
+        //    roomService = new RoomService(mapper);
+        //}
         public RoomController(IRoomService _roomService)
         {
             roomService = _roomService;
         }
         // GET: Room
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            var rooms = roomService.GetAllTemp();
+            var rooms = await roomService.GetRooms();
             return View(rooms);
         }
     }

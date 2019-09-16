@@ -11,6 +11,6 @@ namespace QuestRoomMVC.BLL.Abstraction
     public interface IRoomService
     {
         Task<ICollection<QuestRoomDto>> GetRooms();
-        List<QuestRoomDto> GetAllTemp();
+        //List<QuestRoomDto> GetAllTemp();
     }
 }

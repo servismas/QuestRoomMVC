@@ -10,6 +10,6 @@ namespace QuestRoomMVC.DAL.Repository
     public interface IRepository<T> where T : class
     {
         Task<IEnumerable<T>> GetAll();
-        List<QuestRoom> GetAllTemp();
+        //List<QuestRoom> GetAllTemp();
     }
 }

@@ -1,5 +1,6 @@
 using AutoMapper;
 using QuestRoomMVC.BLL.Mapping;
+using QuestRoomMVC.UI.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace QuestRoomMVC.UI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-
+            AutofacContainer.Configure();
             //var mapperConfig = new MapperConfiguration(cfg =>
             //{
             //    cfg.AddProfile(new MapperProfile());

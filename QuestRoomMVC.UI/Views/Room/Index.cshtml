@@ -1,9 +1,14 @@
 ﻿@model ICollection<QuestRoomMVC.BLL.DtoModels.QuestRoomDto>
-
-    <div class="row">
-        @foreach (var r in Model)
-        {
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+    <style>
+        .row {
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+    </style>
+<div class="row">
+    @foreach (var r in Model)
+    {
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                 <div class="card">
                     <div class="card-header">
                         <h5 class="card-title">@r.Name</h5>
@@ -17,5 +22,8 @@
                     </div>
                 </div>
             </div>
-        }
-    </div>
+    }
+</div>
+@*<script>
+            alert('ALERT');
+    </script>*@
