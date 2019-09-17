@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DtoModels\PhoneDto.cs" />
+    <Compile Include="DtoModels\PictureDto.cs" />
     <Compile Include="Mapping\MapperProfile.cs" />
     <Compile Include="Services\Abstraction\IRoomService.cs" />
     <Compile Include="DtoModels\QuestRoomDto.cs" />

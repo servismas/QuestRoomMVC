@@ -14,6 +14,8 @@ namespace QuestRoomMVC.BLL.Mapping
         public MapperProfile()
         {
             CreateMap<QuestRoom, QuestRoomDto>();
+            CreateMap<Picture, PictureDto>();
+            CreateMap<Phone, PhoneDto>();
         }
     }
 }

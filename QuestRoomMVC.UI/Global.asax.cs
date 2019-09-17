@@ -17,12 +17,6 @@ namespace QuestRoomMVC.UI
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             AutofacContainer.Configure();
-            //var mapperConfig = new MapperConfiguration(cfg =>
-            //{
-            //    cfg.AddProfile(new MapperProfile());
-            //});
-
-            //IMapper mapper = new Mapper(mapperConfig);
         }
     }
 }

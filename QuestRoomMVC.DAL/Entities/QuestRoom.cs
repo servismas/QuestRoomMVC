@@ -12,12 +12,11 @@ namespace QuestRoomMVC.DAL.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateTime GameTime { get; set; }
+        public int GameTime { get; set; }
         public int MinPlayersCount { get; set; }
         public int MaxPlayersCount { get; set; }
         public int MinPlayersAge { get; set; }
         public string Address { get; set; }
-        public List<string> PhoneNumbers { get; set; }
         public string Email { get; set; }
         public string CompanyName { get; set; }
         public int Rate { get; set; }
@@ -26,7 +25,13 @@ namespace QuestRoomMVC.DAL.Entities
         [Range(1, 5)]
         public int HardLevel { get; set; }
         public string Logo { get; set; }
-        public List<string> Pictures { get; set; }
+        public virtual ICollection<Picture> Pictures { get; set; }
+        public virtual ICollection<Phone> PhoneNumbers { get; set; }
+        public QuestRoom()
+        {
+            Pictures = new List<Picture>();
+            PhoneNumbers = new List<Phone>();
+        }
 
     }
 }

@@ -1,12 +1,12 @@
 ﻿body {
-    /*margin: 0;
-    padding: 0;*/
     background-color: #17a2b8;
-    height:300px;
+    height:500px;
 }
 .card {
     background: gray;
     margin:10px;
     padding:10px;
-    border: dotted;
+}
+.view {
+    height: 200px;
 }

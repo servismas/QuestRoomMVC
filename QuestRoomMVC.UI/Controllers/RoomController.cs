@@ -14,21 +14,11 @@ namespace QuestRoomMVC.UI.Controllers
     public class RoomController : Controller
     {
         private readonly IRoomService roomService;
-        //public RoomController()
-        //{
-        //    var mapperConfig = new MapperConfiguration(cfg =>
-        //    {
-        //        cfg.AddProfile(new MapperProfile());
-        //    });
-
-        //    IMapper mapper = new Mapper(mapperConfig);
-        //    roomService = new RoomService(mapper);
-        //}
+      
         public RoomController(IRoomService _roomService)
         {
             roomService = _roomService;
         }
-        // GET: Room
         public async Task<ActionResult> Index()
         {
             var rooms = await roomService.GetRooms();

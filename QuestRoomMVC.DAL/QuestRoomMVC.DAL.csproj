@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Phone.cs" />
+    <Compile Include="Entities\Picture.cs" />
     <Compile Include="Entities\QuestRoom.cs" />
     <Compile Include="Initializer\RoomsInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
