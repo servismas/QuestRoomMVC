@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace QuestRoomMVC.DAL.Initializer
 {
-    public class RoomsInitializer : DropCreateDatabaseIfModelChanges<QuestContext>
-    //public class RoomsInitializer : DropCreateDatabaseAlways<QuestContext>
+    //public class RoomsInitializer : DropCreateDatabaseIfModelChanges<QuestContext>
+    public class RoomsInitializer : DropCreateDatabaseAlways<QuestContext>
     {
         protected override void Seed(QuestContext context)
         {
